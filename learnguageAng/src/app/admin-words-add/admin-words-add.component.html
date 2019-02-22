@@ -16,8 +16,7 @@
   </div>
   <div class="row d-flex flex-column">
     <div class="d-flex">
-      <input class="col-2 article form-control" type="text" id="article-single">
-      <input class="col-10 word form-control" type="text" id="word-single">
+      <input class="col-12 word form-control" type="text" id="word-single">
     </div>
     <div class="button-choose-pic mt-2">
       <button (click)="openModal(single, 'single')" class="btn btn-success">Select a picture</button>
@@ -34,7 +33,6 @@
           <h4 class="modal-title" id="modal-basic-title">Choose Single Picture</h4>
           <div class="d-flex">
             <span id="original-word-single"></span>
-            :<span class="pl-1" id="translated-word-single"></span>
           </div>
         </div>
         <div class="modal-body d-flex flex-wrap">
@@ -63,8 +61,7 @@
   </div>
   <div class="row d-flex flex-column">
       <div class="d-flex">
-        <input class="col-2 article form-control" type="text" id="article-plural">
-        <input class="col-10 word form-control" type="text" id="word-plural">
+        <input class="col-12 word form-control" type="text" id="word-plural">
       </div>
       <div class="button-choose-pic mt-2">
         <button (click)="openModal(plural, 'plural')" class="btn btn-success">Select a picture</button>
@@ -81,7 +78,6 @@
           <h4 class="modal-title" id="modal-basic-title">Choose Plural Picture</h4>
           <div class="d-flex">
             <span id="original-word-plural"></span>
-            :<span class="pl-1" id="translated-word-plural"></span>
           </div>
         </div>
         <div class="modal-body d-flex flex-wrap">

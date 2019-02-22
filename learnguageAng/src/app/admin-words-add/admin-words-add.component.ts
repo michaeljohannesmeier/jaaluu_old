@@ -137,18 +137,11 @@ export class AdminWordsAddComponent implements OnInit {
     this.textService.getTranslation(wordToTranslate.value).subscribe(trans => {
       this.wordEng = trans;
 
-      const articleSingle = <HTMLInputElement>(
-        document.getElementById('article-single')
-      );
-      const articleSingleValue = articleSingle.value;
       const wordSingle = <HTMLInputElement>(
         document.getElementById('word-single')
       );
       const wordSingleValue = wordSingle.value;
-      const articlePlural = <HTMLInputElement>(
-        document.getElementById('article-plural')
-      );
-      const articlePluralValue = articlePlural.value;
+
       const wordPlural = <HTMLInputElement>(
         document.getElementById('word-plural')
       );
@@ -157,9 +150,7 @@ export class AdminWordsAddComponent implements OnInit {
       const exampleValue = example.value;
       const categoryValue = this.categories.value;
       const data = new Word(
-        articleSingleValue,
         wordSingleValue,
-        articlePluralValue,
         wordPluralValue,
         exampleValue,
         categoryValue,
