@@ -1,0 +1,73 @@
+
+
+.block{
+  background-color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.category {
+  color: #4CAF50;
+  width: 100%; 
+}
+@media screen and (min-width:800px) { 
+  .category {
+    width: 60%; 
+  }
+}
+
+.oneButton {
+  width: 100%
+}
+.twoButtons {
+  width: 100%
+}
+@media screen and (min-width:800px) {
+  .twoButtons {
+    width: 60%
+  }
+}
+
+.buttonMenu {
+  flex: 0 1 auto;
+  border: none;
+  width: 100%;
+  background-color: dimgrey;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+@media screen and (min-width:800px) {
+  .buttonMenu {
+    flex: 0 1 auto;
+    border: none;
+    width: 60%;
+    background-color: dimgrey;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+
+.buttonLeft{
+  margin-right: 1px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.buttonRight{
+  margin-left: 1px;
+}
+
+.buttonMenu:hover {
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+}

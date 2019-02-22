@@ -1,0 +1,59 @@
+.about-container {
+    width: 100%;
+    margin: auto;
+}
+@media screen and (min-width:800px) {
+    .about-container {
+      width: 60%;
+      margin: auto;
+    }
+}
+
+.hidden-on-start {
+    display: none;
+    color: grey;
+}
+
+.logo-header {
+    height: 100px;
+    width: 100px;
+}
+
+#about-text-0 {
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+
+#about-text-1 {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#jaaluu-container {
+    display: none;
+}
+
+#description-container {
+    height: 600px;
+    margin: 0 20px
+}
+
+@media screen and (min-width:400px) {
+    #description-container {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #description-container {
+        height: 400px;
+        margin: 0px;
+    }
+}
+
+.horizontal-line {
+    border: 1px solid black;
+    opacity: 0.5;
+}

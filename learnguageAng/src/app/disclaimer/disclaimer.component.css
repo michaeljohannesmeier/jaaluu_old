@@ -1,0 +1,17 @@
+.disclaimer-text {
+    margin: 0 20px;
+}
+@media screen and (min-width:800px) {
+    #disclaimer-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .disclaimer-text {
+        margin: 0 auto;
+    }
+}
+
+.horizontal-line {
+    border: 1px solid black;
+    opacity: 0.5;
+}

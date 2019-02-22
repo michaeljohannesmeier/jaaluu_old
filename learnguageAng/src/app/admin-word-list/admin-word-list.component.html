@@ -1,0 +1,14 @@
+<div class="content-container">
+  <div *ngFor="let word of words">
+    <a href="admin/word/{{word}}">
+      {{word}}
+    </a>
+  </div>
+  <div class="mt-3">
+    <a href="admin/words/add">
+      <button class="btn btn-success">
+        Add word
+      </button>
+    </a>
+  </div>
+</div>

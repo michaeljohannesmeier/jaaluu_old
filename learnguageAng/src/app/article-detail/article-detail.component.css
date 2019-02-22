@@ -1,0 +1,233 @@
+
+@media screen and (min-width:800px) {
+  .article-detail-container {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+.imgImText {
+  width: 100%
+}
+
+@media screen and (min-width:800px) {
+  div.polaroid {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+}
+
+.containerOptions {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  margin: auto;
+}
+
+#my-audio {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 52px;
+  z-index: 10;
+}
+@media screen and (min-width:400px) {
+  #my-audio {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.mycontainer {
+  margin: auto;
+  background-color: white;
+  padding: 5%;
+}
+
+@media screen and (min-width:800px) {
+  .mycontainer {
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    padding: 5%;
+  }
+}
+
+
+p {
+  font-family: Lato;
+}
+
+.containerCheckbox {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* .containerCheckboxMark {
+  padding-left: 0px;
+} */
+
+/* @media screen and (min-width:800px) {
+  .containerCheckboxMark {
+    display: none;
+  }
+} */
+
+/* Hide the browser's default checkbox */
+.containerCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: dimgrey;
+}
+@media screen and (min-width:800px) {
+  /* On mouse-over, add a grey background color */
+  .containerCheckbox:hover input ~ .checkmark {
+    background-color: #70c970;
+  }
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.containerCheckbox input:checked ~ .checkmark {
+  background-color: #4CAF50;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheckbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.leftArrowPara {
+  width: 15px;
+}
+
+.leftArrowHead {
+  width: 20px;
+}
+
+.picturesContainer{
+  display: flex;
+  position: fixed;
+  z-index: 10;
+}
+
+.close-cross {
+  cursor: pointer;
+  margin-top: -12px;
+  margin-right: -9px;
+  padding: 8px;
+}
+
+
+.audio-player-container {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 50px;
+  background-color: white;
+  z-index: 10;
+}
+@media screen and (min-width:800px) {
+  .audio-player-container {
+    width: 60%;
+  }
+}
+
+
+#play svg{
+  cursor: pointer;
+  height: 30px;
+}
+#pause svg{
+  height: 30px;
+  cursor: pointer;
+}
+
+#progress {
+  width: 50%;
+  height: 30px;
+  border: 1px solid dimgrey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#bar {
+  background-color: #4CAF50;
+  /* border-top-left-radius: 5px; */
+  /* border-bottom-left-radius: 5px; */
+  border-radius: 4px;
+  width: 0;
+  height: 100%;
+}
+
+#playback-rate {
+  height: 30px;
+  margin-left: 10px;
+  border: solid 1px dimgrey;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#playback-rate:focus {
+  border-color: #4CAF50;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(100,100,100,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(100,100,100,.6);
+}
+
+
+.horizontal-line {
+  border: 1px solid black;
+  opacity: 0.5;
+}
+@media screen and (min-width:800px) {
+  .horizontal-line {
+      display: none;
+  }
+}

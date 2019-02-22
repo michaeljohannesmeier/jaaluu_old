@@ -1,0 +1,27 @@
+headline0='''Bolivien'''
+
+paragraph0='''Bolivien ist ein dünn bewohntes Bergland in Südamerika. In diesem Staat leben nur elf Millionen Menschen auf einer Fläche, die etwa dreimal so groß ist wie Deutschland. Als Binnenstaat hat Bolivien keinen Zugang zum Meer. Die Nachbarländer sind Peru, Chile, Argentinien, Paraguay und Brasilien. 
+Bolivien gehörte den Inkas, als es im 16. Jahrhundert durch die Spanier erobert wurde. Die beuteten dann die ertragreichen Silberminen aus. Im Jahr 1809 begann Bolivien den Kampf um die Unabhängigkeit. Im Jahr 1825 wurde das Land selbständig.
+'''
+
+headline1=''' Wie ist das Land?'''
+
+paragraph1='''Im Westen gibt es zwei Gebirgszüge. Sie erreichen eine Höhe von 6500 Metern über dem Meeresspiegel. Das ist deutlich höher als die Alpen in Europa. Zwischen diesen beiden Gebirgszügen liegt ein Hochland, zwischen 3000 und 4000 Metern Höhe. Hier leben mehr als die Hälfte aller Bolivianer.
+In diesem Hochland liegen auch der größte Salzsee der Welt und der Titicacasee. Der ist der höchstgelegene See der Welt auf dem Schiffe fahren. Etwa die Hälfte davon gehört zu Bolivien. Der Rest gehört zu Peru. Der See gilt als der Götterhimmel für verschiedene Kulturen. Es gibt eine alte Legende: Der Sonnengott Inti habe den ersten Inka auf die Sonneninsel im See geschickt. Man sagt auch, dass man am See zum ersten Mal Kartoffeln angebaut habe.
+Östlich der beiden Gebirgszüge liegt ein Bergland in mittlerer Höhe, dann folgt das Tiefland. Dies ist der größte Teil des Landes. Dort leben nur wenige Menschen. Es ist tropisch-heiß. Es gibt trockene Savannen aber auch feuchten Regenwald.
+'''
+
+headline2=''' Wie sind die Menschen in Bolivien?'''
+
+paragraph2='''Etwa die Hälfte der Menschen gehören zur indigenen, also zur ursprünglichen Bevölkerung. Ein knappes Viertel sind Einwanderer aus Europa, ein gutes Viertel sind aus diesen beiden Gruppen gemischt. Etwa vier von fünf Menschen zählen sich zur Katholischen Kirche, die meisten übrigen sind protestantisch oder evangelisch.
+Lange Zeit war Bolivien das ärmste Land Südamerikas. Heute geht es deutlich besser. Es gibt Erdgas, das gefördert und verkauft wird. Viel Sojabohnen werden angebaut und in die Nachbarländer verkauft. Es gibt auch Bergbau und die Förderung von Erdöl. Nahrung und Alkohol werden produziert, Tabak für Zigaretten wird angebaut und Kleidung wird hergestellt. Viel Geld machen die Menschen auch mit dem Anbau von Koka. Aus dieser Pflanze kann man die Droge Kokain herstellen.
+Ein besonderer Schatz liegt in einem Salzsee. Dort liegen Millionen von Tonnen an Lithium. Dies ist ein Leichtmetall, das man für den Bau von Batterien braucht, die in Handys, Computern und zunehmend in Elektro-Autos verbaut werden.
+'''
+
+headline3=''' Wie wird Bolivien regiert?'''
+
+paragraph3='''Bolivien hat seinen Namen vom Unabhängigkeitskämpfer Simón Bolívar. Für mehrere Länder ist er der Nationalheld. Er war der erste Präsident Boliviens, doch gab er das Amt rasch an seinen Stellvertreter Antonio José de Sucre ab.
+Regiert wird von La Paz aus. Keine andere Großstadt der Erde liegt so hoch über dem Meeresspiegel. Die offizielle Hauptstadt ist aber Sucre. Mehr als der Oberste Gerichtshof ist dort jedoch nicht zu finden. Von Sucre aus begann General Don Antonio José de Sucre den Kampf um die Unabhängigkeit Boliviens. Deshalb erhielt die Stadt seinen Namen.
+
+'''
+

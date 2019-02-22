@@ -1,0 +1,10 @@
+headline0='''Abtreibung'''
+
+paragraph0='''Bei einer Abtreibung wird ein winziges oder kleines Baby aus dem Bauch seiner Mutter herausgeholt und stirbt. Man nennt das deshalb auch Schwangerschafts-Abbruch. Dies geschieht meist, weil die Mutter kein Kind haben will oder sie denkt, dass sie nicht dafür sorgen kann. Manchmal werden Frauen aber auch zu einer Abtreibung gezwungen. Oft ist das sogar der Mann, der das Kind gezeugt hat.
+Abtreibungen gibt es seit dem Altertum. Es gab immer Frauen, die besondere Pflanzen kannten. Wenn eine schwangere Frau davon einen Tee trank, stieß ihr Körper das werdende Kind aus. Es gab auch Eingriffe mit Instrumenten durch die Vagina. Bei beiden Methoden gab es oft Verletzungen. Frauen verloren ihre Fähigkeit, wieder schwanger zu werden oder starben sogar.
+Schon immer stritten sich die Menschen darum, ob man eine Abtreibung vornehmen dürfe oder nicht. Vor allem ging es darum, ob die Mutter allein über ihren Körper bestimmen darf und über alles, was drin ist. Die Frage war auch immer, ab welchem Zeitpunkt nach der Befruchtung man von einem Kind oder von einem Menschen sprechen soll. Und: Sollte der Staat dieses Leben schützen?
+In den meisten Ländern von Europa, Nordamerika und dem nördlichen Teil von Asien ist heute eine Abtreibung erlaubt, wenn die Frau dies will. In den meisten Ländern von Afrika und Südamerika sowie im südlichen Teil Asiens ist eine Abtreibung nur erlaubt, wenn eine Gefahr für das Leben der Mutter besteht. In Deutschland, Österreich und der Schweiz sowie in vielen anderen Ländern ist heute eine Abtreibung in den ersten drei Monaten der Schwangerschaft möglich.
+Abtreibungen werden heute fast immer in einer Klinik durchgeführt. Meist wird das werdende Kind mit einer starken Saugpumpe herausgeholt. Mit Medikamenten kann man den Körper der Frau auch dazu bringen, eine zu frühe Geburt zu machen. Einige Frauen haben anschließend Schmerzen, wenige können nicht mehr schwanger werden. Die einen fühlen sich befreit, weil sie nicht mehr schwanger sind. Andere haben ein schlechtes Gewissen.
+
+'''
+

@@ -1,0 +1,22 @@
+
+<div class="article-list-container">
+    <app-header></app-header>
+    <div class="search-container mt-4">
+        <input #searchBox id="search-box" placeholder="Suche" (keyup)="search(searchBox.value)" />
+    </div>
+    
+
+    <app-article-item 
+     *ngFor="let text of texts | paginate: { itemsPerPage: 5, currentPage: pageNum }; let i = index"
+     [textId]="text.id"
+     [text]="text"
+     [category]="category">
+    </app-article-item>
+    <br>
+    <pagination-controls 
+        (pageChange)="pageChange($event)"
+        previousLabel="Zurück"
+        nextLabel="Weiter">
+    </pagination-controls>
+    <hr class="horizontal-line mt-5">
+</div>

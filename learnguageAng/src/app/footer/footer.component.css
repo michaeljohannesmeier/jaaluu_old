@@ -1,0 +1,8 @@
+
+.footer-link {
+    margin: 0 20px;
+    color: black;
+}
+.footer-link:hover {
+    color: #4CAF50;
+}

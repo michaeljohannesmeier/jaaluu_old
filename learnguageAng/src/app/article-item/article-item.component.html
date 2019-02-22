@@ -1,0 +1,40 @@
+
+<ng-template #noSymbol><span></span></ng-template>
+
+<div class="container">
+  <a style="cursor: pointer" [routerLink]="['../../articles/',textId]" [queryParams]="{category: category}" class="articleItem list-group-item clearfix" routerLinkActive="active">
+
+    <div class="polaroid">
+      <div class="imageContainer">
+        <img class="imgList" src="static/assets/images/text{{textId}}_0_{{ name | slashunderline }}.jpg" alt="No picture available">
+      </div>
+      <div class="textContainer">
+        <h3>
+          <span *ngFor="let word of text.oTextHeadline0; let i = index;">
+              <ng-template #popContent>
+                  {{text.transHeadline0[i][1]}} {{ text.transHeadline0[i][2]}}<br>
+              </ng-template>
+              <span  class="hoverText"
+              >
+                <span>{{ word }}</span>
+              </span>
+          </span>
+        </h3>
+        <span *ngFor="let word of text.oTextParagraph0; let i = index;">
+            <ng-template #popContent>
+                {{text.transParagraph0[i][1]}} {{ text.transParagraph0[i][2]}}<br>
+            </ng-template>
+            <span  class="hoverText"
+            >
+              <span>{{ word }}</span>
+            </span>
+        </span>
+          ...
+      </div>
+        <br>
+      <br>
+    </div>
+  </a>
+</div>
+
+

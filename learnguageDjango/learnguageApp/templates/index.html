@@ -1,0 +1,24 @@
+{% load staticfiles %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title></title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="{% static styles %}"></head>
+<body>
+<app-root></app-root>
+<script type="text/javascript" src="{% static runtime %}"></script>
+<script type="text/javascript" src="{% static polyfills %}"></script>
+<script type="text/javascript" src="{% static scripts %}"></script>
+<script type="text/javascript" src="{% static main %}"></script>
+</body>
+
+
+
+

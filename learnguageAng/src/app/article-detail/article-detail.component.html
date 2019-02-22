@@ -1,0 +1,161 @@
+
+
+<div (scroll)="handleScroll()" class="article-detail-container">
+  <app-header></app-header>
+  <div class="d-flex justify-content-center">
+    <audio id="my-audio" preload="none" controls>
+        <source id="my-audio-src" type="audio/mpeg" codecs="mp3">
+    </audio>
+  </div>
+    <!-- <div class="audio-player-container d-flex justify-content-center align-items-center mb-3">
+      <div id="controls">
+          <span id="play" style="display:none">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve" fill="#4CAF50">
+                <g>
+                  <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651
+                    l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416
+                    c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151
+                    C315.662,233.564,313.652,237.364,310.292,239.651z"/>
+                </g>
+            </svg>
+          </span>
+          <span id="pause" style="display:none">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 271.953 271.953" style="enable-background:new 0 0 271.953 271.953;" xml:space="preserve">
+                <g>
+                  <path style="fill:#4CAF50;" d="M135.977,271.953c75.097,0,135.977-60.879,135.977-135.977S211.074,0,135.977,0S0,60.879,0,135.977
+                    S60.879,271.953,135.977,271.953z M135.977,21.756c62.979,0,114.22,51.241,114.22,114.22s-51.241,114.22-114.22,114.22
+                    s-114.22-51.241-114.22-114.22S72.992,21.756,135.977,21.756z"/>
+                  <path style="fill:#4CAF50;" d="M110.707,200.114c7.511,0,13.598-6.086,13.598-13.598V83.174c0-7.511-6.086-13.598-13.598-13.598
+                    c-7.511,0-13.598,6.086-13.598,13.598v103.342C97.109,194.028,103.195,200.114,110.707,200.114z"/>
+                  <path style="fill:#4CAF50;" d="M165.097,200.114c7.511,0,13.598-6.086,13.598-13.598V83.174c0-7.511-6.086-13.598-13.598-13.598
+                    S151.5,75.663,151.5,83.174v103.342C151.5,194.028,157.586,200.114,165.097,200.114z"/>
+                </g>
+              </svg>
+          </span>
+      </div>
+      <div id="progress" class="ml-3">
+        <div id="bar" class="d-flex align-items-center">
+          <span id="current-time"></span>
+          <span>/</span>
+          <span id="duration-time"></span>
+        </div>
+      </div>
+      <div>
+        <div>
+            <select id="playback-rate" (change)=changePlayback()>
+                <option>0.5</option>
+                <option>0.75</option>
+                <option selected>1</option>
+                <option>1.25</option>
+              </select>
+        </div>
+      </div>
+  </div> -->
+
+  <div class="containerOptions mt-5 d-flex justify-content-center">
+    <label class="containerCheckbox containerCheckboxShowPic">
+      <input type="checkbox" checked="true" (change)="toggleVisibility($event)"/>
+      Bilder anzeigen
+      <span class="checkmark"></span>
+    </label>
+    <!-- <label class="containerCheckbox containerCheckboxTextHighlight ml-4">
+      <input type="checkbox" checked="true" (change)="toggleTextHighlight($event)" id="show-text-highlight"/>
+      Text highlight
+      <span class="checkmark"></span>
+    </label> -->
+  </div>
+
+
+
+
+
+  <ng-template #leftArrowHead><span><img class="leftArrowHead"
+      src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4OSA0ODkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4OSA0ODk7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KPGc+Cgk8cGF0aCBkPSJNNDI5LjQsMjU1LjAzM2MtMzUuNC00My4xLTEwMi4xLTk0LjQtMjE5LjctOTguOHYtNzkuOGMwLTQuNy0yLjctOS4xLTctMTEuMXMtOS40LTEuNC0xMywxLjZMNC41LDIxOS42MzMgICBjLTIuOCwyLjMtNC41LDUuOC00LjUsOS40YzAsMy43LDEuNiw3LjEsNC40LDkuNGwxODUuMiwxNTMuM2MzLjcsMyw4LjcsMy43LDEzLDEuNmM0LjMtMiw3LTYuMyw3LTExLjF2LTc5LjUgICBjNzYuOCwwLjMsMTk0LjIsNiwyNTYuNSwxMTUuOWMyLjIsMy45LDYuMyw2LjIsMTAuNyw2LjJjMSwwLDIuMS0wLjEsMy4xLTAuNGM1LjQtMS40LDkuMS02LjMsOS4xLTExLjggICBDNDg5LjEsMzcxLjUzMyw0NzMuNCwzMDguNjMzLDQyOS40LDI1NS4wMzN6IE0xOTcuNCwyNzguMjMzTDE5Ny40LDI3OC4yMzNjLTMuMywwLTYuNCwxLjMtOC43LDMuNnMtMy42LDUuNC0zLjYsOC43djY1LjcgICBsLTE1My41LTEyNy4xbDE1My42LTEyNi43djY1LjdjMCw2LjcsNS40LDEyLjIsMTIuMSwxMi4zYzE3NiwxLjcsMjQxLjYsMTA5LDI2MC43LDE4NC40ICAgQzM4Mi4yLDI3OC4zMzMsMjY4LjcsMjc4LjIzMywxOTcuNCwyNzguMjMzeiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="/>&nbsp;</span>
+  </ng-template>
+  <ng-template #leftArrowPara><span><img class="leftArrowPara"
+      src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4OSA0ODkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4OSA0ODk7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KPGc+Cgk8cGF0aCBkPSJNNDI5LjQsMjU1LjAzM2MtMzUuNC00My4xLTEwMi4xLTk0LjQtMjE5LjctOTguOHYtNzkuOGMwLTQuNy0yLjctOS4xLTctMTEuMXMtOS40LTEuNC0xMywxLjZMNC41LDIxOS42MzMgICBjLTIuOCwyLjMtNC41LDUuOC00LjUsOS40YzAsMy43LDEuNiw3LjEsNC40LDkuNGwxODUuMiwxNTMuM2MzLjcsMyw4LjcsMy43LDEzLDEuNmM0LjMtMiw3LTYuMyw3LTExLjF2LTc5LjUgICBjNzYuOCwwLjMsMTk0LjIsNiwyNTYuNSwxMTUuOWMyLjIsMy45LDYuMyw2LjIsMTAuNyw2LjJjMSwwLDIuMS0wLjEsMy4xLTAuNGM1LjQtMS40LDkuMS02LjMsOS4xLTExLjggICBDNDg5LjEsMzcxLjUzMyw0NzMuNCwzMDguNjMzLDQyOS40LDI1NS4wMzN6IE0xOTcuNCwyNzguMjMzTDE5Ny40LDI3OC4yMzNjLTMuMywwLTYuNCwxLjMtOC43LDMuNnMtMy42LDUuNC0zLjYsOC43djY1LjcgICBsLTE1My41LTEyNy4xbDE1My42LTEyNi43djY1LjdjMCw2LjcsNS40LDEyLjIsMTIuMSwxMi4zYzE3NiwxLjcsMjQxLjYsMTA5LDI2MC43LDE4NC40ICAgQzM4Mi4yLDI3OC4zMzMsMjY4LjcsMjc4LjIzMywxOTcuNCwyNzguMjMzeiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="/>&nbsp;</span>
+  </ng-template>
+
+
+
+  <div *ngIf="showPicturesHover">
+    <div class="picturesContainer" [ngStyle]="topPics ? {'top': '0px'} : {'bottom': '0px'}"
+        *ngIf="pictureShow.textPart_transParagraph[pictureShow.i][2] == '(noun)' && showPicturesChecked">
+      <img class="popoverImage" [style.width]="imageSize" [style.height]="imageSize"
+      *ngIf="'static/assets/images/text' + textId + '/p' + pictureShow.textPartIndex + '-' + pictureShow.i + '-0-' + pictureShow.textPart_transParagraph[pictureShow.i][1] + '.jpg' !== undefined"
+          src="static/assets/images/text{{textId}}/p{{pictureShow.textPartIndex}}-{{ pictureShow.i }}-0-{{ pictureShow.textPart_transParagraph[pictureShow.i][1] }}.jpg"
+          alt="">
+      <img class="popoverImage" [style.width]="imageSize" [style.height]="imageSize"
+          src="static/assets/images/text{{textId}}/p{{pictureShow.textPartIndex}}-{{ pictureShow.i }}-1-{{ pictureShow.textPart_transParagraph[pictureShow.i][1] }}.jpg"
+          alt=""><br>
+      <img class="popoverImage" [style.width]="imageSize" [style.height]="imageSize"
+          src="static/assets/images/text{{textId}}/p{{pictureShow.textPartIndex}}-{{ pictureShow.i }}-2-{{ pictureShow.textPart_transParagraph[pictureShow.i][1] }}.jpg"
+          alt="">
+      <img class="popoverImage" [style.width]="imageSize" [style.height]="imageSize"
+          src="static/assets/images/text{{textId}}/p{{pictureShow.textPartIndex}}-{{ pictureShow.i }}-3-{{ pictureShow.textPart_transParagraph[pictureShow.i][1] }}.jpg"
+          alt="">
+    </div>
+  </div>
+
+  <div class="mycontainer">
+    <div *ngFor="let textPart of completeText; index as textPartIndex">
+      <h3>
+        <span *ngFor="let word of textPart.oTextHeadline; index as i">
+
+            <ng-template #popContent>{{textPart.transHeadline[i][1]}} {{textPart.transHeadline[i][2]}}</ng-template>
+            <ng-template #popTitle>
+              <div class="d-flex justify-content-between align-items-center">
+                <span>{{textPart.transHeadline[i][0]}}</span> 
+                <span *ngIf="mobileScreen" class="ml-3 close-cross" (click)="close()">&times;</span>
+              </div>
+            </ng-template>
+            <span id="text{{textId}}-p{{textPartIndex}}-{{i}}" class="hoverText" 
+              [ngbPopover]="popContent" [popoverTitle]="popTitle" [autoClose]="false" triggers="manual"
+              (mouseenter)="open(p, $event, textPartIndex, i, textPart.transHeadline)"
+              (mouseleave)=mouseleave() placement="auto"
+              #p="ngbPopover" (click)="open(p, $event, textPartIndex, i, textPart.transHeadline)"
+            >
+            <span *ngIf="word!='>ss<';else leftArrowHead" class="word">{{ word }}</span>
+          </span>
+        </span>
+
+      </h3>
+
+
+      <span *ngFor="let word of textPart.oTextParagraph; index as i">
+
+          <ng-template #popContent>{{textPart.transParagraph[i][1]}} {{textPart.transParagraph[i][2]}}</ng-template>
+          <ng-template #popTitle>
+            <div class="d-flex justify-content-between">
+              <span>{{textPart.transParagraph[i][0]}}</span>
+              <span *ngIf="mobileScreen" class="ml-3 close-cross" (click)="close()">&times;</span>
+            </div>
+          </ng-template>
+          <span id="text{{textId}}-p{{textPartIndex}}-{{i}}" class="hoverText"
+            [ngbPopover]="popContent" [popoverTitle]="popTitle" [autoClose]="false" triggers="manual"
+            (mouseenter)="open(p, $event, textPartIndex, i, textPart.transParagraph)"
+            (mouseleave)=mouseleave() placement="auto"
+            #p="ngbPopover" (click)="open(p, $event, textPartIndex, i, textPart.transParagraph)"
+          >
+          <span *ngIf="word!='>ss<';else leftArrowPara" class="word">{{ word }}</span>
+        </span>
+      </span>
+      <br>
+      <br>
+      <div class="container">
+        <div class="polaroid">
+          <img class="imgImText"
+              src="static/assets/images/text{{textId}}_{{textPartIndex}}_{{ completeText[0].oTextHeadline | namestrip }}.jpg"
+              alt="Paris">
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <hr class="horizontal-line mt-5">
+
+
+</div>

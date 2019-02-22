@@ -1,0 +1,60 @@
+
+
+.articleItem:hover {
+  border-left: 5px solid #4CAF50;
+}
+
+
+a:hover {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+
+.imageContainer{
+  flex: 1 1 auto;
+  padding-left: 1%;
+}
+@media screen and (min-width:800px) {
+  .imageContainer{
+    flex: 1 1 auto;
+    padding-right: 4%;
+  }
+}
+
+
+.imgList {
+  float: right;
+  width: 100px;
+  height: 100px;
+  padding-left: 5%;
+}
+@media screen and (min-width:800px) {
+  .imgList {
+    float: left;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+.textContainer {
+  flex: 1 1 auto;
+}
+
+
+
+
+@media screen and (min-width:800px) {
+  .polaroid {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+
+
+

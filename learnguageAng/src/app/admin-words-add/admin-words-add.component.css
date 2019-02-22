@@ -1,0 +1,78 @@
+
+
+.content-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:800px) {
+    .content-container {
+        width: 80%;
+    }
+}
+
+.article {
+    max-width: 70px;
+    margin-right: 10px;
+}
+.word {
+    max-width: 200px;
+}
+.example {
+    width: 280px;
+}
+.button-choose-pic {
+    width: 200px;
+}
+
+.img-modal {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.img-modal:hover {
+    transform: scale(1.1);
+}
+
+.img-selected {
+    width: 250px;
+    height: auto;
+}
+
+
+#loading-spinner {
+    z-index: 1000;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icon-checked {
+    z-index: 1000;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icon-checked svg path {
+    stroke: #4CAF50;
+    fill: #4CAF50;
+}
+
+#icon-checked svg {
+    height: 200px;
+    width: 200px;
+}
+
+.loading-text {
+    padding: 0px 10px;
+    background-color: white;
+}

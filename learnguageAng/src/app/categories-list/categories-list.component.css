@@ -1,0 +1,164 @@
+
+
+
+.logo-header {
+  width: 80px;
+  height: 80px;
+}
+.logo-header-start {
+    width: 80px;
+    height: 80px;
+}
+
+.lan-img {
+    width: 50px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.eng{
+    background:  url("/static/assets/images/eng.png")  center / contain no-repeat;
+    white-space: nowrap
+}
+  
+  
+.es{
+    background:  url("/static/assets/images/es.png") center / contain no-repeat;
+    white-space: nowrap;
+}
+
+.fr{
+    background:  url("/static/assets/images/fr.png") center / contain no-repeat;
+    white-space: nowrap;
+}
+
+
+
+@media screen and (min-width:800px) {
+    .logo-header-start {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.logo-text {
+    color: #4CAF50;
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+
+}
+
+#description-container {
+    margin: auto;
+    height: 28vh;
+}
+
+.content-container {
+    width: 90%;
+}
+@media screen and (min-width:800px) {
+    .content-container {
+      width: 60%;
+    }
+}
+
+.cross-intro {
+    cursor: pointer;
+}
+
+.hidden-on-start {
+    visibility: hidden;
+    color: grey;
+}
+
+
+
+.buttonMenu {
+    flex: 0 1 auto;
+    border: none;
+    width: 100%;
+    background-color: dimgrey;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media screen and (min-width:800px) {
+    .buttonMenu {
+        flex: 0 1 auto;
+        border: none;
+        width: 80%;
+        background-color: dimgrey;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+}
+.block{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.oneButton {
+    width: 100%
+}
+
+.buttonMenu:hover {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+}
+  
+
+@media screen and (min-width:800px) {
+    .categories-list-body {
+      width: 80%;
+      margin: auto;
+    }
+}
+.card-container {
+    width: 50%;
+    padding: 10px 10px;
+}
+@media screen and (min-width:500px) {
+    .card-container {
+        width: 33%;
+        padding: 10px 10px;
+    }
+}
+@media screen and (min-width:800px) {
+    .card-container {
+        width: 25%;
+        padding: 10px 10px;
+    }
+}
+
+.horizontal-line {
+    border: 1px solid black;
+    opacity: 0.5;
+}
+@media screen and (min-width:800px) {
+    .horizontal-line {
+        border: 1px solid black;
+        opacity: 0.5;
+        width: 80%;
+    }
+}
+
+
+
+#about-text-0 {
+    color: #4CAF50
+}
+
+#about-text-1 {
+    color: grey;
+    font-weight: bold;
+}

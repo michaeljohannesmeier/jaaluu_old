@@ -1,0 +1,46 @@
+.card {
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 15vw;
+}
+
+.body-card {
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.card-title {
+    margin: auto 10px;
+    height: 15vw;
+    font-size: 14px;
+}
+
+@media screen and (min-width:400px) {
+    .card-title {
+        margin: auto 10px;
+        height: 9vw;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .card-title {
+        margin: auto 10px;
+        height: 7vw;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .card-title {
+        margin: auto 10px;
+        height: 5vw;
+        font-size: 18px;
+    }
+}

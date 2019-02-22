@@ -1,0 +1,20 @@
+@media screen and (min-width:800px) {
+    .article-list-container {
+      width: 60%;
+      margin: auto;
+    }
+}
+
+.search-container {
+    width: 50%;
+    margin: auto;
+}
+#search-box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.horizontal-line {
+    border: 1px solid black;
+    opacity: 0.5;
+}

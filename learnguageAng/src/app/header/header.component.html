@@ -1,0 +1,15 @@
+
+  
+<div class="block oneButton d-flex flex-column" *ngIf="!isArticle && !isArticleListView">
+  <a class="buttonMenu buttonLeft" routerLink="/" (click)="goToCategories()">Alle Kategorien</a>
+</div>
+<div class="block twoButtons" *ngIf="isArticle">
+  <a class="buttonMenu buttonLeft" routerLink="/" (click)="goToCategory()">{{categoryGerman}}</a>
+  <a class="buttonMenu buttonRight" routerLink="/" (click)="goToCategories()">Alle Kategorien</a>
+</div>
+<div class="block oneButton d-flex flex-column" *ngIf="isArticleListView">
+  <a class="buttonMenu buttonLeft" routerLink="/" (click)="goToCategories()">Alle Kategorien</a>
+  <div class="text-center category">Kategorie: {{categoryGerman}}</div>
+  <!-- <a class="buttonMenu buttonRight" routerLink="/learn">Learn</a> -->
+</div>
+

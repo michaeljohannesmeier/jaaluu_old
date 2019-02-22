@@ -1,0 +1,161 @@
+
+<div id="loading-spinner">
+  <mat-spinner></mat-spinner>
+  <div class="loading-text mt-3">Loading data, please wait...</div>
+</div>
+
+<div id="icon-checked">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.88-11.71L10 14.17l-1.88-1.88c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7c.39-.39.39-1.02 0-1.41-.39-.39-1.03-.39-1.42 0z"/></svg>
+</div>
+
+
+<div class="content-container row">
+<div class="mb-1 form-group text-container col-12 col-md-6">
+  <div class="row">
+    <div class="label">Singular</div>
+  </div>
+  <div class="row d-flex flex-column">
+    <div class="d-flex">
+      <input class="col-2 article form-control" type="text" id="article-single">
+      <input class="col-10 word form-control" type="text" id="word-single">
+    </div>
+    <div class="button-choose-pic mt-2">
+      <button (click)="openModal(single, 'single')" class="btn btn-success">Select a picture</button>
+    </div>
+  </div>
+</div>
+<div class="picture-container col-12 col-md-6">
+  <img class="img-selected" src="{{selectedSingleUrl}}" alt="">
+
+
+    
+    <ng-template #single let-modal>
+        <div class="modal-header flex-column">
+          <h4 class="modal-title" id="modal-basic-title">Choose Single Picture</h4>
+          <div class="d-flex">
+            <span id="original-word-single"></span>
+            :<span class="pl-1" id="translated-word-single"></span>
+          </div>
+        </div>
+        <div class="modal-body d-flex flex-wrap">
+          <span *ngFor="let url of singleUrls; let i = index">
+              <img id="single-img-{{i}}" class="img-modal img-modal-single" src="{{url}}" alt="" 
+              (click)="selectImage(i, 'single')">
+          </span>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" 
+          (click)="closeModal(single, 'single')">Ok</button>
+        </div>
+      </ng-template>
+      
+
+
+
+</div>
+</div>
+
+<div class="content-container row mt-3">
+<div class="mb-1 form-group text-container col-12 col-md-6">
+  <div class="row">
+    <div class="label">Plural</div>
+  </div>
+  <div class="row d-flex flex-column">
+      <div class="d-flex">
+        <input class="col-2 article form-control" type="text" id="article-plural">
+        <input class="col-10 word form-control" type="text" id="word-plural">
+      </div>
+      <div class="button-choose-pic mt-2">
+        <button (click)="openModal(plural, 'plural')" class="btn btn-success">Select a picture</button>
+      </div>
+    </div>
+</div>
+<div class="picture-container col-12 col-md-6">
+
+  <img class="img-selected" src="{{selectedPluralUrl}}" alt="">
+
+    
+    <ng-template #plural let-modal>
+        <div class="modal-header flex-column">
+          <h4 class="modal-title" id="modal-basic-title">Choose Plural Picture</h4>
+          <div class="d-flex">
+            <span id="original-word-plural"></span>
+            :<span class="pl-1" id="translated-word-plural"></span>
+          </div>
+        </div>
+        <div class="modal-body d-flex flex-wrap">
+          <span *ngFor="let url of pluralUrls; let i = index">
+              <img id="plural-img-{{i}}" class="img-modal img-modal-plural" src="{{url}}" alt="" 
+              (click)="selectImage(i, 'plural')">
+          </span>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" 
+          (click)="closeModal(plural, 'plural')">Ok</button>
+        </div>
+      </ng-template>
+
+
+</div>
+</div>
+
+<div class="content-container row mt-3">
+<div class="mb-1 form-group text-container col-12 col-md-6">
+  <div class="row">
+    <div class="label">Example</div>
+  </div>
+  <div class="row d-flex flex-column">
+    <textarea id="example-text" rows="3" class="form-control example"></textarea>
+    <input class="example form-control mt-1" type="text" id="word-example">
+    <div class="button-choose-pic mt-2">
+      <button (click)="openModal(example, 'example')" class="btn btn-success">Select a picture</button>
+    </div>
+  </div>
+</div>
+<div class="picture-container col-12 col-md-6">
+  <img class="img-selected" src="{{selectedExampleUrl}}" alt="">
+
+    <ng-template #example let-modal>
+        <div class="modal-header flex-column">
+          <h4 class="modal-title" id="modal-basic-title">Choose Example Picture</h4>
+          <div class="d-flex">
+            <span id="original-word-example"></span>
+            :<span class="pl-1" id="translated-word-example"></span>
+          </div>
+        </div>
+        <div class="modal-body d-flex flex-wrap">
+          <span *ngFor="let url of exampleUrls; let i = index">
+              <img id="example-img-{{i}}" class="img-modal img-modal-example" src="{{url}}" alt="" 
+              (click)="selectImage(i, 'example')">
+          </span>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" 
+          (click)="closeModal(example, 'example')">Ok</button>
+        </div>
+      </ng-template>
+
+</div>
+</div>
+
+<div class="content-container mt-2">
+  <div class="mb-1 form-group col-12">
+    <div class="row">
+        <mat-form-field>
+          <mat-select id="categories" placeholder="Categories" [formControl]="categories" multiple>
+            <mat-option *ngFor="let category of categoriesEnglish" [value]="category">{{category}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="content-container mt-4">
+<button class="btn btn-success" (click)="saveWord()">Save</button>
+</div>
+
