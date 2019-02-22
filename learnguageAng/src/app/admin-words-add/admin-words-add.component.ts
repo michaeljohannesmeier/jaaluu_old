@@ -35,7 +35,6 @@ export class AdminWordsAddComponent implements OnInit {
   public client_id =
     '00d7daff4c4f80d95f26d63a11cadac0d762b2777a746d53c5664d3ee4d70b6a';
   public categories = new FormControl();
-  public wordEng: string;
   public videoUrl: string;
   public showVideo = false;
 
@@ -71,7 +70,6 @@ export class AdminWordsAddComponent implements OnInit {
           return response.json();
         })
         .then(response => {
-          console.log(response);
           response.results.forEach(result => {
             if (type === 'single') {
               this.singleUrls.push(result.urls.small);
@@ -133,44 +131,40 @@ export class AdminWordsAddComponent implements OnInit {
     const wordToTranslate = document.getElementById(
       'word-single'
     ) as HTMLInputElement;
-    console.log(wordToTranslate.value);
-    this.textService.getTranslation(wordToTranslate.value).subscribe(trans => {
-      this.wordEng = trans;
 
-      const wordSingle = <HTMLInputElement>(
-        document.getElementById('word-single')
-      );
-      const wordSingleValue = wordSingle.value;
 
-      const wordPlural = <HTMLInputElement>(
-        document.getElementById('word-plural')
-      );
-      const wordPluralValue = wordPlural.value;
-      const example = <HTMLInputElement>document.getElementById('example-text');
-      const exampleValue = example.value;
-      const categoryValue = this.categories.value;
-      const data = new Word(
-        wordSingleValue,
-        wordPluralValue,
-        exampleValue,
-        categoryValue,
-        this.selectedSingleUrlBig,
-        this.selectedPluralUrlBig,
-        this.selectedExampleUrlBig
-      );
-      console.log(data);
-      document.getElementById('loading-spinner').style.display = 'flex';
-      this.textService.saveWord(data).then(result => {
-        if (result === 1) {
-          document.getElementById('loading-spinner').style.display = 'none';
-          document.getElementById('icon-checked').style.display = 'block';
-          this.videoUrl =
-            './static/assets/words/' + this.wordEng + '/output.mp4';
-          setTimeout(() => {
-            this.router.navigate(['admin/word/', this.wordEng]);
-          }, 2000);
-        }
-      });
+    const wordSingle = <HTMLInputElement>(
+      document.getElementById('word-single')
+    );
+    const wordSingleValue = wordSingle.value;
+
+    const wordPlural = <HTMLInputElement>(
+      document.getElementById('word-plural')
+    );
+    const wordPluralValue = wordPlural.value;
+    const example = <HTMLInputElement>document.getElementById('example-text');
+    const exampleValue = example.value;
+    const categoryValue = this.categories.value;
+    const data = new Word(
+      wordSingleValue,
+      wordPluralValue,
+      exampleValue,
+      categoryValue,
+      this.selectedSingleUrlBig,
+      this.selectedPluralUrlBig,
+      this.selectedExampleUrlBig
+    );
+    document.getElementById('loading-spinner').style.display = 'flex';
+    this.textService.saveWord(data).then(result => {
+      if (result === 1) {
+        document.getElementById('loading-spinner').style.display = 'none';
+        document.getElementById('icon-checked').style.display = 'block';
+        this.videoUrl =
+          './static/assets/words/' + wordSingleValue + '/output.mp4';
+        setTimeout(() => {
+          this.router.navigate(['admin/word/', wordSingleValue]);
+        }, 2000);
+      }
     });
   }
 }

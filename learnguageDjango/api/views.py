@@ -61,12 +61,6 @@ def text(request):
     text =  list(collection.find({'_id': id}))[0]
     return HttpResponse(json.dumps(text), content_type='application/json')
 
-def translate(request):
-    word = request.GET.get('word')
-    mytrans = translator.translate(word, dest='en', src='de')
-    translation = mytrans.extra_data['translation'][0][0]
-    return HttpResponse(json.dumps(translation), content_type='application/json')
-
 def saveword(request):
 
     db = client.jaaluu_words

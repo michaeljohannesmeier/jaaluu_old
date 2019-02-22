@@ -160,9 +160,6 @@ export class TextService implements OnInit {
     return this.markedWords;
   }
 
-  getTranslation(word): Observable<string> {
-    return this.http.get<string>(this.protocol + '://' + this.domain + '/translate?word=' + word);
-  }
   saveWord(data: Word): Promise<number> {
     function getCookie(name) {
         let cookieValue = null;
